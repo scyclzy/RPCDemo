@@ -13,8 +13,8 @@ int intAdd(int x, int y) {
 int _tmain(int argc, _TCHAR* argv[])
 {
 	// 采用tcp协议，13521端口
-	RpcServerUseProtseqEp((RPC_WSTR)L"ncacn_ip_tcp", RPC_C_PROTSEQ_MAX_REQS_DEFAULT,
-		(RPC_WSTR)L"13521", NULL);
+	RpcServerUseProtseqEp((RPC_WSTR)L"ncalrpc", RPC_C_PROTSEQ_MAX_REQS_DEFAULT,
+		(RPC_WSTR)L"RPCDemo", NULL);
 	// 注册，HelloWorld_v1_0_s_ifspec定义域头文件test.h
 	// 注意：从Windows XP SP2开始，增强了安全性的要求，如果用RpcServerRegisterIf()注册接口，客户端调用时会出现
 	// RpcExceptionCode() == 5，即Access Denied的错误，因此，必须用RpcServerRegisterIfEx带RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH标志
