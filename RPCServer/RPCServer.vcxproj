@@ -81,10 +81,12 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\RPCDemo\RPCDemo_h.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\RPCDemo\RPCDemo_s.c" />
     <ClCompile Include="RPCServer.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>

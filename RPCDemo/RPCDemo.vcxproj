@@ -85,8 +85,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="RPCDemo.cpp" />
-    <ClCompile Include="RPCDemo_c.c" />
-    <ClCompile Include="RPCDemo_s.c" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>

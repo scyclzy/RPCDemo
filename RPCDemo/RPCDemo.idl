@@ -9,4 +9,5 @@ import "ocidl.idl";
 interface HelloWorld
 {
 	int intAdd(int x, int y);
+	boolean shutdownServer();
 }

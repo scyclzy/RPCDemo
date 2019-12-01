@@ -35,12 +35,6 @@
     <ClCompile Include="RPCDemo.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="RPCDemo_c.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="RPCDemo_s.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Midl Include="RPCDemo.idl">

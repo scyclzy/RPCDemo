@@ -9,6 +9,10 @@ int intAdd(int x, int y) {
 	return x + y;
 }
 
+boolean shutdownServer() {
+	return true;
+}
+
 
 int _tmain(int argc, _TCHAR* argv[])
 {
