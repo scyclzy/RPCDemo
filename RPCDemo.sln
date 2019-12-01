@@ -5,6 +5,17 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RPCDemo", "RPCDemo\RPCDemo.vcxproj", "{B870F010-A3AD-48AA-B5F4-92CA387C1949}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RPCServer", "RPCServer\RPCServer.vcxproj", "{BCB0FA81-B058-44CE-B6C1-93CCD686FB52}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B870F010-A3AD-48AA-B5F4-92CA387C1949} = {B870F010-A3AD-48AA-B5F4-92CA387C1949}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RPCClient", "RPCClient\RPCClient.vcxproj", "{5CB0B0F6-1FE2-4E63-BD8D-DA271371A7A7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B870F010-A3AD-48AA-B5F4-92CA387C1949} = {B870F010-A3AD-48AA-B5F4-92CA387C1949}
+		{BCB0FA81-B058-44CE-B6C1-93CCD686FB52} = {BCB0FA81-B058-44CE-B6C1-93CCD686FB52}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -15,6 +26,14 @@ Global
 		{B870F010-A3AD-48AA-B5F4-92CA387C1949}.Debug|Win32.Build.0 = Debug|Win32
 		{B870F010-A3AD-48AA-B5F4-92CA387C1949}.Release|Win32.ActiveCfg = Release|Win32
 		{B870F010-A3AD-48AA-B5F4-92CA387C1949}.Release|Win32.Build.0 = Release|Win32
+		{BCB0FA81-B058-44CE-B6C1-93CCD686FB52}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BCB0FA81-B058-44CE-B6C1-93CCD686FB52}.Debug|Win32.Build.0 = Debug|Win32
+		{BCB0FA81-B058-44CE-B6C1-93CCD686FB52}.Release|Win32.ActiveCfg = Release|Win32
+		{BCB0FA81-B058-44CE-B6C1-93CCD686FB52}.Release|Win32.Build.0 = Release|Win32
+		{5CB0B0F6-1FE2-4E63-BD8D-DA271371A7A7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5CB0B0F6-1FE2-4E63-BD8D-DA271371A7A7}.Debug|Win32.Build.0 = Debug|Win32
+		{5CB0B0F6-1FE2-4E63-BD8D-DA271371A7A7}.Release|Win32.ActiveCfg = Release|Win32
+		{5CB0B0F6-1FE2-4E63-BD8D-DA271371A7A7}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

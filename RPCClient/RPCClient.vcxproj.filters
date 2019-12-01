@@ -24,30 +24,13 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="RPCDemo_h.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="RPCDemo.cpp">
+    <ClCompile Include="RPCClient.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="RPCDemo_c.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="RPCDemo_s.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Midl Include="RPCDemo.idl">
-      <Filter>源文件</Filter>
-    </Midl>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="RPCDemo.acf" />
   </ItemGroup>
 </Project>

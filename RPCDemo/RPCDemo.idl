@@ -1,0 +1,12 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid("327A9917-DC47-4131-8B26-D70B8305759F"),
+	version(1.0)
+]
+
+interface HelloWorld
+{
+	int intAdd(int x, int y);
+}
