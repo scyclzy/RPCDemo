@@ -4,7 +4,7 @@
 
 
  /* File created by MIDL compiler version 8.00.0603 */
-/* at Sun Dec 01 13:21:08 2019
+/* at Sun Dec 01 19:42:03 2019
  */
 /* Compiler settings for RPCDemo.idl:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.00.0603 
@@ -36,7 +36,7 @@
 #include "RPCDemo_h.h"
 
 #define TYPE_FORMAT_STRING_SIZE   3                                 
-#define PROC_FORMAT_STRING_SIZE   43                                
+#define PROC_FORMAT_STRING_SIZE   73                                
 #define EXPR_FORMAT_STRING_SIZE   1                                 
 #define TRANSMIT_AS_TABLE_SIZE    0            
 #define WIRE_MARSHAL_TABLE_SIZE   0            
@@ -112,6 +112,20 @@ int intAdd(
 }
 
 
+boolean shutdownServer( void)
+{
+
+    CLIENT_CALL_RETURN _RetVal;
+
+    _RetVal = NdrClientCall2(
+                  ( PMIDL_STUB_DESC  )&HelloWorld_StubDesc,
+                  (PFORMAT_STRING) &RPCDemo__MIDL_ProcFormatString.Format[42],
+                  ( unsigned char * )0);
+    return ( boolean  )_RetVal.Simple;
+    
+}
+
+
 #if !defined(__RPC_WIN32__)
 #error  Invalid build platform for this stub.
 #endif
@@ -167,6 +181,30 @@ static const RPCDemo_MIDL_PROC_FORMAT_STRING RPCDemo__MIDL_ProcFormatString =
 /* 40 */	0x8,		/* FC_LONG */
 			0x0,		/* 0 */
 
+	/* Procedure shutdownServer */
+
+/* 42 */	0x32,		/* FC_BIND_PRIMITIVE */
+			0x48,		/* Old Flags:  */
+/* 44 */	NdrFcLong( 0x0 ),	/* 0 */
+/* 48 */	NdrFcShort( 0x1 ),	/* 1 */
+/* 50 */	NdrFcShort( 0x4 ),	/* x86 Stack size/offset = 4 */
+/* 52 */	NdrFcShort( 0x0 ),	/* 0 */
+/* 54 */	NdrFcShort( 0x5 ),	/* 5 */
+/* 56 */	0x44,		/* Oi2 Flags:  has return, has ext, */
+			0x1,		/* 1 */
+/* 58 */	0x8,		/* 8 */
+			0x1,		/* Ext Flags:  new corr desc, */
+/* 60 */	NdrFcShort( 0x0 ),	/* 0 */
+/* 62 */	NdrFcShort( 0x0 ),	/* 0 */
+/* 64 */	NdrFcShort( 0x0 ),	/* 0 */
+
+	/* Return value */
+
+/* 66 */	NdrFcShort( 0x70 ),	/* Flags:  out, return, base type, */
+/* 68 */	NdrFcShort( 0x0 ),	/* x86 Stack size/offset = 0 */
+/* 70 */	0x3,		/* FC_SMALL */
+			0x0,		/* 0 */
+
 			0x0
         }
     };
@@ -183,7 +221,8 @@ static const RPCDemo_MIDL_TYPE_FORMAT_STRING RPCDemo__MIDL_TypeFormatString =
 
 static const unsigned short HelloWorld_FormatStringOffsetTable[] =
     {
-    0
+    0,
+    42
     };
 
 

@@ -4,7 +4,7 @@
 
 
  /* File created by MIDL compiler version 8.00.0603 */
-/* at Sun Dec 01 13:21:08 2019
+/* at Sun Dec 01 19:42:03 2019
  */
 /* Compiler settings for RPCDemo.idl:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.00.0603 
@@ -59,6 +59,8 @@ extern "C"{
 int intAdd( 
     int x,
     int y);
+
+boolean shutdownServer( void);
 
 
 extern handle_t test_Binding;
